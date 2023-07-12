@@ -3,15 +3,28 @@
   justify-content: center;
   align-items: center;
   height: 250px;
-  margin-top: 50px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.overall-container {
+  display: flex;
+  width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.arrows {
+  width: 62px;
+  height: 62px;
 }
 
 .card {
   position: absolute;
   width: 300px;
   height: 220px;
-  /* transform-style: preserve-3d; */
-  filter: blur(2.5px);
+  /* filter: blur(2.5px); */
 }
 
 .card0 {
@@ -19,7 +32,7 @@
   height: 220px;
   border-radius: 5px;
   z-index: 3;
-  filter: blur(0px);
+  /* filter: blur(0px); */
   transform: translate(0%);
   transition: transform 0.5s;
 }
@@ -77,10 +90,11 @@
 .dots {
   width: 8px;
   height: 8px;
-  border: 1px solid black;
+  /* border: 1px solid rgba(183, 171, 160, 1); */
+  background-color: rgba(214, 214, 214, 1);
   border-radius: 50%;
 }
 
 .selected {
-  background-color: black;
+  background-color: rgba(183, 171, 160, 1);
 }
