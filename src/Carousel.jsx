@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Carousel.css";
-import leftArrow from "./assets/leftPointed.png";
-import rightArrow from "./assets/rightPointed.png";
+import leftArrow from "./leftPointed.png";
+import rightArrow from "./rightPointed.png";
 
 export const Carousel = () => {
   const [selected, setSelected] = useState(2);
